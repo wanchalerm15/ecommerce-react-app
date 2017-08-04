@@ -1,5 +1,120 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+/* import another */
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
+
+/* Top menu */
+.top-menu {
+	background-color: #2E2E2E;
+    padding: 0;
+	margin: 0;
+	line-height: 36px;
+}
+.top-menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.top-menu ul li {
+	display: inline-block;
+}
+.top-menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.85em;
+    margin: 0 0.5em;
+}
+.top-menu ul li a:hover {
+	color: #F67777;
+}
+
+
+/* Bottom Menu */
+.bottom-menu {
+	background-color: white;
+	padding: 0;
+	margin: 0;
+	line-height: 66px;
+	position: relative;
+}
+.bottom-menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.bottom-menu ul li {
+	border-right: 1px solid #EFEFEF;
+	display: inline-block;
+}
+.bottom-menu ul li a {
+	display: inline-block;
+    text-decoration: none;
+	font-size: 1em;
+    color: #3A3A3A;
+    padding: 0 1.6em;
+}
+.bottom-menu ul li a:hover {
+	background-color: #f67777;
+    color: #fff;
+}
+.bottom-menu .text-right li {
+	border: none;
+}
+.bottom-menu .text-right li a {
+	border-left: 1px solid #EFEFEF;
+	display: inline;
+}
+.bottom-menu .text-right li a:hover {
+	background: none;
+	color: #F67777;
+}
+.bottom-menu .col-2 {
+	padding-right: 0;
+}
+.bottom-menu .col-8 {
+	padding-left: 0;
+}
+.bottom-menu .logo {
+	font-family: 'Great Vibes';
+	display: block;
+	text-decoration: none;
+	background-color: #f67777;
+	height: 102px;
+	width: 100%;
+	text-align: center;
+	line-height: 102px;
+	font-size: 2em;
+	color: white;
+	position: absolute;
+	top: -36px;
+	left: 0;
+}
+
+
+/* Slide image bar */
+.slider-bar {
+	height: 700px;
+	background-image: url(/images/ba11.jpg);
+	background-repeat: no-repeat;
+	background-position: center right;
+}
+.slider-bar .align-items-center {
+	height: 700px;
+}
+.slider-bar-head {
+	line-height: 1.6em;
+	color: #000;
+}
+.slider-bar-head .header {
+	font-size: 2.2em;
+    white-space: nowrap;
+}
+.slider-bar-head .detail {
+	font-size: 30px;
+	font-weight: 400;
+}
+.slider-bar-head .color {
+	margin-top: 30px;
+    font-size: 1.4em;
+    font-style: italic;
+    color: #F67777;
 }
