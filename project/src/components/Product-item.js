@@ -96,7 +96,9 @@ class ProductItem extends Component {
                   </div>
 
                   <div className="prod-detail">
-                     <a href="" className="fa fa-cart-plus pull-right"></a>
+                     <a href="" className="pull-right">
+                        <i className="fa fa-cart-plus"></i>
+                     </a>
                      <span>{ item.category }</span>
                      <h6>
                         <a href="single.html">{ item.name }</a>

@@ -25,9 +25,9 @@ class Footer extends Component {
                      <ul>
    							<li><a href="404.html">About</a></li>
    							<li><a href="contact.html">Contact Us</a></li>
-   							<li><a href="#">Returns</a></li>
+   							<li><a href="">Returns</a></li>
    							<li><a href="contact.html">Site Map</a></li>
-                        <li><a href="#">Order History</a></li>
+                        <li><a href="">Order History</a></li>
    							<li><a href="wishlist.html">Wish List</a></li>
    							<li><a href="login.html">Login</a></li>
    						</ul>
@@ -35,13 +35,13 @@ class Footer extends Component {
                   <div className="col">
                      <h6>TAGS</h6>
                      <ul className="tags">
-   							<li><a href="#">Lorem</a></li>
-   							<li><a href="#">Sed</a></li>
-   							<li><a href="#">Ipsum</a></li>
-   							<li><a href="#">Contrary</a></li>
-   							<li><a href="#">Chunk</a></li>
-   							<li><a href="#">Amet</a></li>
-   							<li><a href="#">Omnis</a></li>
+   							<li><a href="">Lorem</a></li>
+   							<li><a href="">Sed</a></li>
+   							<li><a href="">Ipsum</a></li>
+   							<li><a href="">Contrary</a></li>
+   							<li><a href="">Chunk</a></li>
+   							<li><a href="">Amet</a></li>
+   							<li><a href="">Omnis</a></li>
    						</ul>
                   </div>
                   <div className="col">

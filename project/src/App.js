@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
+import BrowserRouter from 'react-router-dom/BrowserRouter';
+import AppRouter from './AppRouter';
+
 import Navbar from './components/Navbar';
-import Sliderbar from './components/Sliderbar';
-import ProductHeader from './components/Product-header';
-import ProductItem from './components/Product-item';
 import FooterPage from './components/Footer';
 
 class App extends Component {
    render() {
       return (
-         <div id="ecommerce-react-app">
-         	<Navbar />
-         	<Sliderbar />
-            <ProductHeader />
-            <ProductItem />
-            <FooterPage />
-         </div>
+         <BrowserRouter>
+            <div id="ecommerce-react-app">
+            	<Navbar />
+               <AppRouter />
+               <FooterPage />
+            </div>
+         </BrowserRouter>
       );
    }
 }

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { Url } from '../AppRouter';
 
 class Navbar extends Component {
 	constructor() {
@@ -16,18 +18,18 @@ class Navbar extends Component {
 						<div className="row">
 							<div className="col-6 offset-2 text-left">
 								<ul>
-									<li><a href="login.html">Login</a></li>
-									<li><a href="register.html">Register</a></li>
-									<li><a href="checkout.html">Checkout</a></li>
+									<li><Link to={ Url.Login }>Login</Link></li>
+									<li><Link to={ Url.Register }>Register</Link></li>
+									<li><Link to={ Url.Checkout }>Checkout</Link></li>
 								</ul>
 							</div>
 							<div className="col-4 text-right">
 								<ul>
-									<li><a href="#"><i className="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i className="fa fa-facebook"></i></a></li>
-									<li><a href="#"><i className="fa fa-globe"></i></a></li>
-									<li><a href="#"><i className="fa fa-linkedin"></i></a></li>
-									<li><a href="#"><i className="fa fa-feed"></i></a></li>
+									<li><a href=""><i className="fa fa-twitter"></i></a></li>
+									<li><a href=""><i className="fa fa-facebook"></i></a></li>
+									<li><a href=""><i className="fa fa-globe"></i></a></li>
+									<li><a href=""><i className="fa fa-linkedin"></i></a></li>
+									<li><a href=""><i className="fa fa-feed"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -36,8 +38,8 @@ class Navbar extends Component {
 				<div className="bottom-menu">
 					<div className="container">
 						<div className="row">
-							<div className="col-2">
-								<a href="" className="logo">React Shop</a>
+							<div className="col-2 logo-box">
+								<Link to={ Url.Home } className="logo">React Shop</Link>
 							</div>
 							<div className="col-8 text-left">
 								<ul>
@@ -62,7 +64,7 @@ class Navbar extends Component {
 			</nav>
 		);
 	}
-	
+
 }
 
 export default Navbar;
