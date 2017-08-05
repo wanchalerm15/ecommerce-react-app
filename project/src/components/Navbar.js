@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 
 class Navbar extends Component {
+	constructor() {
+		super();
+		this.state = {
+			cart: 0
+		}
+	}
+
 	render() {
 		return (
 			<nav>
@@ -46,7 +53,7 @@ class Navbar extends Component {
 							<div className="col-2 text-right">
 								<ul>
 									<li><a href=""><i className="fa fa-search"></i></a></li>
-									<li><a href=""><i className="fa fa-shopping-cart"></i></a></li>
+									<li><a href=""><i className="fa fa-shopping-cart"></i> {this.state.cart}</a></li>
 								</ul>
 							</div>
 						</div>
@@ -55,6 +62,7 @@ class Navbar extends Component {
 			</nav>
 		);
 	}
+	
 }
 
 export default Navbar;
