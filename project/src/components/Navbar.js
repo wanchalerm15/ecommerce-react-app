@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Url } from '../AppRouter';
 
 class Navbar extends Component {
@@ -18,9 +18,9 @@ class Navbar extends Component {
 						<div className="row">
 							<div className="col-6 offset-2 text-left">
 								<ul>
-									<li><Link to={ Url.Login }>Login</Link></li>
-									<li><Link to={ Url.Register }>Register</Link></li>
-									<li><Link to={ Url.Checkout }>Checkout</Link></li>
+									<li><NavLink to={ Url.Login } activeClassName="active">Login</NavLink></li>
+									<li><NavLink to={ Url.Register } activeClassName="active">Register</NavLink></li>
+									<li><NavLink to={ Url.Checkout } activeClassName="active">Checkout</NavLink></li>
 								</ul>
 							</div>
 							<div className="col-4 text-right">

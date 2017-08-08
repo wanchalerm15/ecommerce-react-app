@@ -19,6 +19,46 @@ a.buy-now:hover {
 	color: #000;
 	border-bottom: 2px solid #000;
 }
+.form-control {
+	border-radius: 0;
+	color: #999;
+}
+.form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	color: #999;
+	font-weight: 300;
+}
+.form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	color: #999;
+	font-weight: 300;
+}
+.form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
+	color: #999;
+	font-weight: 300;
+}
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #999;
+	font-weight: 300;
+}
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+	color: #999;
+	font-weight: 300;
+}
+.form-check-input {
+	margin-right: 5px;
+}
+.icon-input {
+	position: relative;
+}
+.icon-input .form-control {
+	padding-right: 40px;
+}
+.icon-input > .icon {
+	color: #F67777;
+	font-size: 1em;
+	position: absolute;
+	top: 10px;
+	right: 15px;
+}
 
 
 /* Top menu class */
@@ -44,7 +84,8 @@ a.buy-now:hover {
   font-size: 0.8em;
   margin: 0 0.8em;
 }
-.top-menu ul li a:hover {
+.top-menu ul li a:hover,
+.top-menu ul li a.active {
 	color: #F67777;
 }
 
@@ -464,4 +505,131 @@ a.buy-now:hover {
 .footer .letter .btn-pink:hover {
 	color: #F67777;
 	background: #fff;
+}
+
+/* Login class */
+.login .banner {
+	text-align: center;
+	width: 100%;
+	height: 250px;
+	display: block;
+	background-image: url(/images/login-bg.jpg);
+	padding: 5em 0;
+}
+.login .banner h1 {
+	font-size: 3em;
+ 	color: #fff;
+	font-weight: 400;
+}
+.login .banner h2 {
+	font-size: 0.9em;
+	color: #fff;
+	margin-top: 1em;
+	font-weight: 300;
+}
+.login .banner a {
+	color: #f67777;
+}
+.login .banner label {
+	margin: 0 0.4em;
+}
+.login .form {
+	padding: 5em 0 0;
+}
+.login .form .form-group {
+	margin-bottom: 30px;
+}
+.login .form label {
+	font-weight: 300;
+}
+.login .form .form-check {
+	margin-bottom: 1em;
+}
+.login .form .form-check-input {
+	position: relative;
+	top: -1px;
+}
+.login .form h3 {
+	font-size: 1.5em;
+	color: #000000;
+	font-weight: 400;
+}
+.login .form p {
+	font-size: 0.9em;
+	color: #B3B3B3;
+	line-height: 1.8em;
+	margin: 1em 0;
+	font-weight: 300;
+}
+.login .form .btn.btn-pink {
+	background-color: #F67777;
+	color: #fff;
+	padding: 0.5em 1em;
+	font-size: 1em;
+	border-radius: 0;
+	min-width: 130px;
+}
+
+
+/* Register class */
+.register .banner {
+	text-align: center;
+	width: 100%;
+	height: 250px;
+	display: block;
+	background-image: url(/images/login-bg.jpg);
+	padding: 5em 0;
+}
+.register .banner h1 {
+	font-size: 3em;
+ 	color: #fff;
+	font-weight: 400;
+}
+.register .banner h2 {
+	font-size: 0.9em;
+	color: #fff;
+	margin-top: 1em;
+	font-weight: 300;
+}
+.register .banner a {
+	color: #f67777;
+}
+.register .banner label {
+	margin: 0 0.4em;
+}
+.register .form {
+	padding: 5em 0 0;
+}
+.register .form .form-group {
+	margin-bottom: 30px;
+}
+.register .form label {
+	font-weight: 300;
+}
+.register .form .form-check {
+	margin-bottom: 1em;
+}
+.register .form .form-check-input {
+	position: relative;
+	top: -1px;
+}
+.register .form h3 {
+	font-size: 1.5em;
+	color: #000000;
+	font-weight: 400;
+}
+.register .form p {
+	font-size: 0.9em;
+	color: #B3B3B3;
+	line-height: 1.8em;
+	margin: 1em 0;
+	font-weight: 300;
+}
+.register .form .btn.btn-pink {
+	background-color: #F67777;
+	color: #fff;
+	padding: 0.5em 1em;
+	font-size: 1em;
+	border-radius: 0;
+	min-width: 130px;
 }
