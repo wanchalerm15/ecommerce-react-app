@@ -507,8 +507,8 @@ a.buy-now:hover {
 	background: #fff;
 }
 
-/* Login class */
-.login .banner {
+/* Banner class */
+.banner {
 	text-align: center;
 	width: 100%;
 	height: 250px;
@@ -516,23 +516,25 @@ a.buy-now:hover {
 	background-image: url(/images/login-bg.jpg);
 	padding: 5em 0;
 }
-.login .banner h1 {
+.banner h1 {
 	font-size: 3em;
  	color: #fff;
 	font-weight: 400;
 }
-.login .banner h2 {
+.banner h2 {
 	font-size: 0.9em;
 	color: #fff;
 	margin-top: 1em;
 	font-weight: 300;
 }
-.login .banner a {
+.banner a {
 	color: #f67777;
 }
-.login .banner label {
+.banner label {
 	margin: 0 0.4em;
 }
+
+/* Login class */
 .login .form {
 	padding: 5em 0 0;
 }
@@ -572,31 +574,6 @@ a.buy-now:hover {
 
 
 /* Register class */
-.register .banner {
-	text-align: center;
-	width: 100%;
-	height: 250px;
-	display: block;
-	background-image: url(/images/login-bg.jpg);
-	padding: 5em 0;
-}
-.register .banner h1 {
-	font-size: 3em;
- 	color: #fff;
-	font-weight: 400;
-}
-.register .banner h2 {
-	font-size: 0.9em;
-	color: #fff;
-	margin-top: 1em;
-	font-weight: 300;
-}
-.register .banner a {
-	color: #f67777;
-}
-.register .banner label {
-	margin: 0 0.4em;
-}
 .register .form {
 	padding: 5em 0 0;
 }
@@ -632,4 +609,64 @@ a.buy-now:hover {
 	font-size: 1em;
 	border-radius: 0;
 	min-width: 130px;
+}
+
+
+/* Brand footer class */
+.brand-footer {
+	padding: 1.5em 0;
+}
+.brand-footer img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	border: double 3px #1F1F1F;
+}
+
+/* Checkout class */
+.checkout .checkout-table {
+	margin: 2em 0;
+}
+.checkout .table th {
+	color: #000000;
+	font-size: 1.25em;
+	font-weight: 400;
+	border-top: none;
+}
+.checkout .table td {
+	color: #b2b2b2;
+	font-size: 1em;
+}
+.checkout .checkout-detail img {
+	float: left;
+	margin-right: 1.5em;
+	height: 115px;
+}
+.checkout .checkout-detail:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.checkout .checkout-detail h5 {
+	margin: 0;
+}
+.checkout .checkout-detail h5 a {
+	color: #F67777;
+	text-decoration: none;
+	font-size: .9em;
+	font-weight: 400;
+}
+.checkout .checkout-detail p {
+	color: #b2b2b2;
+	font-size: 0.8em;
+	line-height: 1.8em;
+	padding: 1em 0 0;
+	margin: 0;
+}
+.checkout .btn.btn-pink {
+	background-color: #F67777;
+	color: #fff;
+	padding: 0.5em 1em;
+	font-size: 1em;
+	border-radius: 0;
 }

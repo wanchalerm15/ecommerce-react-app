@@ -1,23 +1,14 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Url } from '../AppRouter';
+import Banner from './Banner';
 
 class Login extends Component {
 
    render() {
       return (
          <div className="login">
-            <div className="banner">
-               <div className="container">
-            		<h1>Login</h1>
-            		<em></em>
-            		<h2>
-                     <Link to={ Url.Home }>Home</Link>
-                     <label>/</label>
-                     Login
-                  </h2>
-            	</div>
-            </div>
+            <Banner link="Login" />
 
             <div className="form">
                <div className="container">

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Banner from './Banner';
 import { Link } from 'react-router-dom';
 import { Url } from '../AppRouter';
 
@@ -7,17 +8,7 @@ class Register extends Component {
    render() {
       return (
          <div className="register">
-            <div className="banner">
-               <div className="container">
-            		<h1>Register</h1>
-            		<em></em>
-            		<h2>
-                     <Link to={ Url.Home }>Home</Link>
-                     <label>/</label>
-                     Register
-                  </h2>
-            	</div>
-            </div>
+            <Banner link="Register" />
 
             <div className="form">
                <div className="container">
