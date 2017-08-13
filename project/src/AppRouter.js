@@ -5,12 +5,14 @@ import Home from './components/Home';
 import Login from './components/Login';
 import Register from './components/Register';
 import Checkout from './components/Checkout';
+import Products from './components/products';
 
 export const Url = {
    Home: '/',
    Login: '/Login',
    Register: '/Register',
-   Checkout: '/Checkout'
+   Checkout: '/Checkout',
+   Products: '/Products'
 };
 
 export default () => (
@@ -19,5 +21,6 @@ export default () => (
       <Route path={ Url.Login } component={ Login } />
       <Route path={ Url.Register } component={ Register } />
       <Route path={ Url.Checkout } component={ Checkout } />
+      <Route path={ Url.Products } component={ Products } />
    </Switch>
 );

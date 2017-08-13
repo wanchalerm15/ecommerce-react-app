@@ -44,7 +44,7 @@ class Navbar extends Component {
 							<div className="col-8 text-left">
 								<ul>
 									<li><a href="">Home</a></li>
-									<li><a href="">Women</a></li>
+									<li><Link to={ Url.Products }>Women</Link></li>
 									<li><a href="">Man</a></li>
 									<li><a href="">Sale</a></li>
 									<li><a href="">About</a></li>
