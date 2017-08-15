@@ -77,22 +77,22 @@ class Sidebar extends Component {
    render() {
       return (
          <div className="sidebar">
-            <div className="categories">
+            <div className="boxs categories">
                <h4>Categories</h4>
                <ul>{ this.getCategories() }</ul>
             </div>
 
-            <div className="discounts">
+            <div className="boxs discounts">
                <h4>Discounts</h4>
                <ul>{ this.getDiscounts() }</ul>
             </div>
 
-            <div className="types">
+            <div className="boxs types">
                <h4>Type</h4>
                <ul>{ this.getTypes() }</ul>
             </div>
 
-            <div className="brands">
+            <div className="boxs brands">
                <h4>Brand</h4>
                <ul>{ this.getBrands() }</ul>
             </div>

@@ -16,7 +16,7 @@ class Products extends Component {
       return (
          <div className="products">
             <Banner link="Products" />
-            <div className="container">
+            <div className="products-wapper container">
                <div className="row">
                   <div className="col-8"></div>
                   <div className="col-4">
