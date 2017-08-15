@@ -16,7 +16,8 @@ class Navbar extends Component {
 				<div className="top-menu">
 					<div className="container">
 						<div className="row">
-							<div className="col-6 offset-2 text-left">
+							<div className="col-2"></div>
+							<div className="col-6 text-left">
 								<ul>
 									<li><NavLink to={ Url.Login } activeClassName="active">Login</NavLink></li>
 									<li><NavLink to={ Url.Register } activeClassName="active">Register</NavLink></li>
