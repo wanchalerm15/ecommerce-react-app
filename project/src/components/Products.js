@@ -1,16 +1,9 @@
 import React, { Component } from 'react';
 import Banner from './Banner';
 import Sidebar from './Sidebar';
+import ProductItem from './Product-item-2';
 
 class Products extends Component {
-   constructor() {
-      super();
-      this.state = {
-         items: [
-
-         ]
-      };
-   }
 
    render() {
       return (
@@ -18,8 +11,10 @@ class Products extends Component {
             <Banner link="Products" />
             <div className="products-wapper container">
                <div className="row">
-                  <div className="col-8"></div>
-                  <div className="col-4">
+                  <div className="col-9">
+                     <ProductItem />
+                  </div>
+                  <div className="col-3">
                      <Sidebar />
                   </div>
                </div>

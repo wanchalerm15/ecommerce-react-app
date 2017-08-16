@@ -295,6 +295,9 @@ a.buy-now:hover {
 .product-list {
 	padding-top: 2em;
 }
+.product-list.remove-padding {
+	padding-top: 1em;
+}
 .product-list .boxprod {
 	position: relative;
 	border: 1px solid #EFECEC;
@@ -514,6 +517,7 @@ a.buy-now:hover {
 	height: 250px;
 	display: block;
 	background-image: url(/images/login-bg.jpg);
+	background-repeat: no-repeat;
 	padding: 5em 0;
 }
 .banner h1 {
@@ -675,7 +679,6 @@ a.buy-now:hover {
 }
 .products .products-wapper {
 	padding-top: 1.5em;
-	padding-bottom: 3em;
 }
 
 /* sidebar class */
@@ -691,11 +694,16 @@ a.buy-now:hover {
 	font-size: 1.6em;
 	color: #F67777;
 	font-weight: 400;
+	margin-bottom: 1em;
 }
 .sidebar ul {
 	padding: 0;
 	margin: 0;
 	list-style: none;
+}
+.sidebar ul li {
+	display: block;
+	margin-bottom: .75em;
 }
 .sidebar ul a {
 	color: black;
