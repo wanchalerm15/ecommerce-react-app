@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { Url } from '../AppRouter';
 
 class ProductItem extends Component {
 
@@ -91,7 +93,7 @@ class ProductItem extends Component {
                      <img src={ '/images/' + item.image } alt={ item.image } />
                      <div className="pic-prod-detail">
                        <a><i className="fa fa-search"></i></a>
-                       <a><i className="fa fa-chevron-right"></i></a>
+                       <Link to={ Url.Single }><i className="fa fa-chevron-right"></i></Link>
                      </div>
                   </div>
 
