@@ -1,10 +1,10 @@
 import { createStore, combineReducers } from 'redux';
 import productReducer from './productReducer';
+import userReducer from './userReducer';
 
 const store = createStore(combineReducers({
-   product: productReducer
+   product: productReducer,
+   user: userReducer
 }));
-
-store.subscribe(() => console.log('Update store', store.getState()));
 
 export default store;

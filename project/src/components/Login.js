@@ -1,11 +1,39 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Url } from '../AppRouter';
+import httpRequest from '../redux/httpRequest';
+import { Redirect } from 'react-router-dom';
+import { connect } from 'react-redux';
 import Banner from './Banner';
 
 class Login extends Component {
 
+   constructor(props) {
+      super(props);
+      this.state = {
+         Username: 'wanchaloem.laokeut@googlemail.com',
+         Password: '202EFEB4',
+         redirect: null
+      };
+   }
+
+   onSubmit(e) {
+      httpRequest
+         .requestPost('/Authorization', this.state)
+         .then(response => {
+            this.props.authorization(response);
+            this.setState({ redirect: Url.Home });
+         })
+         .catch(error => alert(error.Message));
+      e.preventDefault();
+   }
+
    render() {
+      const { redirect } = this.state;
+
+      if(redirect)
+         return (<Redirect to={ redirect } />);
+
       return (
          <div className="login">
             <Banner link="Login" />
@@ -14,14 +42,22 @@ class Login extends Component {
                <div className="container">
                   <div className="row">
                      <div className="col">
-                        <form action="">
+                        <form onSubmit={ this.onSubmit.bind(this) }>
                            <div className="form-group icon-input">
-                              <input type="text" className="form-control" placeholder="Email" />
+                              <input type="text"
+                                 value={ this.state.Username }
+                                 onChange={ e => this.setState({ Username:e.target.value }) }
+                                 className="form-control"
+                                 placeholder="Email" />
                               <i className="fa fa-envelope icon"></i>
                            </div>
 
                            <div className="form-group icon-input">
-                              <input type="text" className="form-control" placeholder="Password" />
+                              <input type="password"
+                                 value={ this.state.Password }
+                                 onChange={ e => this.setState({ Password:e.target.value }) }
+                                 className="form-control"
+                                 placeholder="Password" />
                               <div className="fa fa-lock icon"></div>
                            </div>
 
@@ -64,4 +100,17 @@ class Login extends Component {
 
 }
 
-export default Login;
+export default connect(
+   state => {
+      return {
+         user: state.user
+      };
+   },
+   dispatch => {
+      return {
+         authorization (payload) {
+            dispatch({ type: 'authorization', payload });
+         }
+      };
+   }
+)(Login);

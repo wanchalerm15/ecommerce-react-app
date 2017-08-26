@@ -1,11 +1,3 @@
-import axios from 'axios';
-
-axios
-.get('https://api.nongtoum.club/Api/Values')
-.then(res => {
-   console.log(res);
-});
-
 const productsState = {
    item1: [],
    item2: []
@@ -192,7 +184,6 @@ const productReducer = (state = productsState, action) => {
          };
          break;
       default:
-
    }
    return state;
 };

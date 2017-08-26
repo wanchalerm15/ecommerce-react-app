@@ -1,91 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Url } from '../AppRouter';
+import { connect } from 'react-redux';
 
 class ProductItem extends Component {
 
-   constructor() {
-      super();
-      this.state = {
-         products: [
-            {
-               image: 'pc.jpg',
-               category: 'Women',
-               name: 'Sed ut perspiciati',
-               prices: {
-                  saleout: 100,
-                  sale: 70
-               }
-            },
-            {
-               image: 'pc1.jpg',
-               category: 'Women',
-               name: 'At vero eos',
-               prices: {
-                  saleout: 100,
-                  sale: 70
-               }
-            },
-            {
-               image: 'pc2.jpg',
-               category: 'Men',
-               name: 'Sed ut perspiciati',
-               prices: {
-                  saleout: 100,
-                  sale: 70
-               }
-            },
-            {
-               image: 'pc3.jpg',
-               category: 'Women',
-               name: 'On the other',
-               prices: {
-                  saleout: 100,
-                  sale: 70
-               }
-            },
-            {
-               image: 'pc4.jpg',
-               category: 'Men',
-               name: 'On the other',
-               prices: {
-                  saleout: 100,
-                  sale: 70
-               }
-            },
-            {
-               image: 'pc5.jpg',
-               category: 'Men',
-               name: 'Sed ut perspiciati',
-               prices: {
-                  saleout: 100,
-                  sale: 70
-               }
-            },
-            {
-               image: 'pc6.jpg',
-               category: 'Women',
-               name: 'At vero eos',
-               prices: {
-                  saleout: 100,
-                  sale: 70
-               }
-            },
-            {
-               image: 'pc7.jpg',
-               category: 'Men',
-               name: 'Sed ut perspiciati',
-               prices: {
-                  saleout: 100,
-                  sale: 70
-               }
-            }
-         ]
-      }
-   }
-
    mapProductItem() {
-      return this.state.products.map(item => {
+      return this.props.products.map(item => {
          return (
             <div className="col-3" key={ item.image }>
                <div className="boxprod">
@@ -137,4 +58,16 @@ class ProductItem extends Component {
 
 }
 
-export default ProductItem;
+export default connect(
+   state => {
+      return {
+         products: state.product.item1
+      };
+   },
+   dispatch => {
+      dispatch({ type: 'product1' });
+      return {
+
+      };
+   }
+)(ProductItem);
