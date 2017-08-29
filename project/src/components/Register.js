@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Banner from './Banner';
 import { Link } from 'react-router-dom';
 import { Url } from '../AppRouter';
+import { connect } from 'react-redux';
 
 class Register extends Component {
 
@@ -74,4 +75,14 @@ class Register extends Component {
 
 }
 
-export default Register;
+export default connect(
+   state => {
+      return {
+
+      };
+   },
+   dispatch => {
+      return {
+
+      };
+   })(Register);
