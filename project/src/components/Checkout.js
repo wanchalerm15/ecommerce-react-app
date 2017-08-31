@@ -8,6 +8,7 @@ class Checkout extends Component {
       this.state = {
          items: [
             {
+               id: 1,
                image: 'ch.jpg',
                name: 'Sed ut perspiciatis unde',
                detail: '(At vero eos et accusamus et iusto odio dignissimos ducimus)',
@@ -15,6 +16,7 @@ class Checkout extends Component {
                delivery: 'Free shipping'
             },
             {
+               id: 2,
                image: 'ch1.jpg',
                name: 'Sed ut perspiciatis unde',
                detail: '(At vero eos et accusamus et iusto odio dignissimos ducimus)',
@@ -22,6 +24,7 @@ class Checkout extends Component {
                delivery: 'Free shipping'
             },
             {
+               id: 3,
                image: 'ch2.jpg',
                name: 'Sed ut perspiciatis unde',
                detail: '(At vero eos et accusamus et iusto odio dignissimos ducimus)',
@@ -35,7 +38,7 @@ class Checkout extends Component {
    getItemsElement () {
       return this.state.items.map(item => {
          return (
-            <tr>
+            <tr key={ item.id }>
                <td>
                   <div className="checkout-detail">
                      <a href="">

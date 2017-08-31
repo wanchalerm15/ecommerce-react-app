@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Switch, Redirect } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import Home from './components/Home';
 import Login from './components/Login';
@@ -20,7 +20,7 @@ export const Url = {
 };
 
 class AppRouter extends React.Component {
-   
+
    render() {
       return (
          <Switch>
